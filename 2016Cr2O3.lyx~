@@ -1,0 +1,1919 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Molecular Dynamics Study of Anisotropic Lattice Diffusion in 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+P.
+ Cao, D.
+ M.
+ Wells, M.
+ P.
+ Short
+\end_layout
+
+\begin_layout Abstract
+Charge-corrected molecular dynamics (MD) studies of anion and cation self-diffus
+ion, as well as cation dopant diffusion, have been performed using nudged
+ elastic band (NEB) analysis on 
+\begin_inset Formula $\alpha-Cr_{2}O_{3}$
+\end_inset
+
+.
+ Non-negligible anisotropy in the diffusion coefficients between a- and
+ c-axes, increasing in magnitude with decreasing temperature, was observed
+ for all species studied (
+\begin_inset Formula $\mathrm{Cr^{3+},\, O^{2-},\, Fe^{3+},\, Ni^{2+}}$
+\end_inset
+
+).
+ Trends in relative diffusivities, as well as absolute orders of magnitude,
+ agree well with multiple experimental measurements.
+ Because of the ubiquitous technological importance of 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ as the most frequently used corrosion-protecting passivation layer, especially
+ on stainless steel, any method of reducing transport through 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ has profound implications for the reduction and control of corrosion.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Chromium oxide 
+\begin_inset Formula $\left(\alpha-Cr_{2}O_{3}\right)$
+\end_inset
+
+ is arguably the world's most important oxide.
+ It functions as the primary passivating protective layer of the world's
+ most utilized corrosion-resistant structural material, stainless steel.
+ Currently the production of 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+-passivated stainless steels continues to grow expotentially, reaching 41.7
+ million metric tons in 2014 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "(ISSF)2015"
+
+\end_inset
+
+, underpinning critical infrastructures ranging from bridges, to buildings,
+ to nuclear reactors.
+ The continued corrosion-based upkeep cost of stainless steel alone reaching
+ $___billion pear year worldwide [REF - get from Ballinger].
+ Therefore, any deterministic ways of slowing the progress of oxygen penetration
+ from the environment into the metal, or conversely of metal escape from
+ the metal into the environment, however small, would constitute a substantial
+ reduction in the total costs of corrosion worldwide.
+ Even a 10% reduction in corrosion rate could save $___billion per year,
+ in addition to increasing inspection intervals and decreasing failure rates
+ of 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+-passivated components.
+\end_layout
+
+\begin_layout Standard
+One well-known method of controlling corrosion rates governed by ionic transport
+ is to control the texture or anisotropy of the material.
+ This has been well-characterized in stainless steels, where the corrosion
+ rates of both 304 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RaviKumar2005"
+
+\end_inset
+
+ and 316 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shahryari2009"
+
+\end_inset
+
+ were found to directly vary with local crystallographic orientation, separately
+ from the effects of stress-induced 
+\begin_inset Formula $\alpha'$
+\end_inset
+
+-martensite.
+ While the substrate orientation was cited as the determining factor, it
+ is almost certainly the character of the passive 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ layer which controls the corrosion rate.
+ The character of the oxide layer, including its orientation, is itself
+ almost certainly determined by the orientation of the underlying substrate.
+ These studies point to the texture of the underlying steel changing the
+ character of the oxide layer on top.
+ This effect has been observed in other passivating materials as well.
+ Kudelka et al showed how differently oriented grains of Ti corrode at different
+ rates, by studying oxide texture and thicknesses on individual grains in
+ the same experiment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kudelka1995"
+
+\end_inset
+
+.
+ In addition, Hoseini et al showed varying rates of corrosion by impedance
+ spectroscopy to vary with grain orientation in annealed and severly plasticly
+ deformed (SPD) titanium, attributing the change in corrosion rate specifically
+ to substrate grain orientation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hoseini2009"
+
+\end_inset
+
+.
+ Even oxidation of pure platinum exhibits a clear dependence on the underlying
+ metal orientation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Conway1992"
+
+\end_inset
+
+.
+ Clearly the effect of underlying metal orientation changes the nature of
+ the passivating, corrosion-resistant oxide layer on top.
+\end_layout
+
+\begin_layout Standard
+For passivating materials which function as effective diffusion barriers
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jones1996"
+
+\end_inset
+
+, the difference between directionally-different diffusivities will determine
+ the relative, texture-dependent corrosion rates through these materials.
+ Examples of anisotropic cation and anion diffusion through non-cubic oxides
+ exist throughout the literature.
+ These will be reivewed briefly here, with emphasis on those that explore
+ the diffusion mechanisms, not just the rates, behind cation and anion transport.
+ Chroneos et al showed preferential oxygen diffusion in the 
+\emph on
+a-b
+\emph default
+ plane of tetragonal 
+\begin_inset Formula $\mathrm{La_{2}NiO_{4+\delta}}$
+\end_inset
+
+ using MD simulations which explained formerly anomalous experimental measuremen
+ts which varied by a factor of up to 4.5 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chroneos2010"
+
+\end_inset
+
+.
+ Kendrick et al showed the importance of mechanistic understanding in predicting
+ the diffusivity of oxygen through Ga-based oxides, with their results agreeing
+ well with experiments 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kendrick2007"
+
+\end_inset
+
+.
+ The critical importance of understanding diffusion mechanisms through anisotrop
+ic oxides in the form of solid oxide fuel cells was recently highlighted
+ by Chroneos et al 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chroneos2011"
+
+\end_inset
+
+, underscoring the need for more than the standard experiments/simulations
+ showing simply gross rates of transport without explanation.
+\end_layout
+
+\begin_layout Standard
+Dopants can also change oxygen penetration through oxides, either by substition
+ or by ordering.
+ Parfitt et al showed that cation disorder changes oxygen anion diffusion
+ anisotropy 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Parfitt2011"
+
+\end_inset
+
+, showing how cation ordering can affect anion transport through oxides.
+ [MORE TO COME ON DOPING SOON]
+\end_layout
+
+\begin_layout Standard
+Transport of cations and anions specifically through 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ has been experimentally and theoretically studied, though to a degree far
+ lower than would be expected given its technological importance.
+ The experimental literature is more extensive, as tracer experiments of
+ oxygen and cation transport have been quantified by multiple groups.
+ Hagel experimentally found that anion diffusion is slower through 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ compared to cation diffusion 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hagel1965"
+
+\end_inset
+
+.
+ Sabioni et al.
+ studied the diffusion of oxygen 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sabioni1992"
+
+\end_inset
+
+, manganese 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sabioni2005"
+
+\end_inset
+
+, chromium 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sabioni2012"
+
+\end_inset
+
+, and iron 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sabioni2007"
+
+\end_inset
+
+ through chromia polycrystals and thin films by secondary ion mass spectroscopy
+ (SIMS), eventually finding that oxygen diffusivity is faster than that
+ of chromium in 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+.
+ Lobnig et al also used tracer experiments to study the diffusion of Cr,
+ Fe, and Ni through 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lobnig1992"
+
+\end_inset
+
+ as functions of time, while Tsai et al 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tsai1996"
+
+\end_inset
+
+ and Hoshino et al 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hoshino1983"
+
+\end_inset
+
+ experimentally studied the mechanisms of diffusion of Cr and O through
+ 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+.
+ In particular, Hoshino et al specifically studied 
+\emph on
+a-
+\emph default
+ vs.
+ 
+\emph on
+c-
+\emph default
+axis oxygen anion diffusion, and found 
+\emph on
+c-
+\emph default
+axis diffusion to be faster 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hoshino1983"
+
+\end_inset
+
+.
+ The literature concerning simulations of ionic transport 
+\emph on
+through
+\emph default
+ 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ are surprisingly scarce, though studies of surface structure are more common.
+ Catlow et al 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Catlow1988"
+
+\end_inset
+
+ and Vaari 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vaari2015"
+
+\end_inset
+
+ have predicted diffusion coefficients of cations and anions through 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ with comparisons to experimental values, showing mixed results.
+ Because 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+ has a hexagonal close-packed (HCP) crystal structure with a 
+\begin_inset Formula $\nicefrac{c}{a}$
+\end_inset
+
+ axis ratio of 2.74 over a very wide pressure range 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Finger1980"
+
+\end_inset
+
+, any application utilizing 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+ as a passivation layer, from near-vacuum to ultra-high pressure, should
+ benefit from the same texture-based gains in transport resistance.
+ Therefore, precise knowledge of the orientation-dependent transport rates
+ determines whether this strategy can succeed.
+\end_layout
+
+\begin_layout Standard
+In this manuscript, we present detailed, mechanism-based molecular dynamics
+ simulations of oxygen and cation (Fe, Ni, Cr) diffusion through 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+.
+ A combination of defect formation energies, nudged elastic band (NEB) analysis,
+ and extrapolation to lower temperatures via defect population scaling is
+ shown to yield diffusion coefficients similar to those in the experimental
+ results above.
+ Most interesting is a clear anisotropy observed for both oxygen and cations,
+ which increases at lower temperatures, pointing to the potentially enhanced
+ corrosion resistance of 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+ at ___ orientations.
+\end_layout
+
+\begin_layout Section
+Methods
+\end_layout
+
+\begin_layout Standard
+The LAMMPS MD code 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Plimpton1995"
+
+\end_inset
+
+ was used in all simulations in this study.
+ The diffusion coefficients of 
+\begin_inset Formula $\mathrm{Fe^{3+},\, Cr^{3+},\, Ni^{3+},\, and\, O^{2-}}$
+\end_inset
+
+ were all studied in 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+ directly at temperatures ranging from 1200-2000K.
+ The effect of 
+\begin_inset Formula $\mathrm{Fe^{3+}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{Ni^{2+}}$
+\end_inset
+
+ cation dopant concentrations on the diffusion rate of 
+\begin_inset Formula $\mathrm{O^{2-}}$
+\end_inset
+
+ up to concentrations of 0.15 atom fraction was also quantified.
+\end_layout
+
+\begin_layout Standard
+The interactions between self-ions, dopant ions, and combinations thereof
+ in 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+ were modeled by combining a short range Buckingham potential and a longer
+ range Coulombic potential.
+ The Buckingham potential is specifically chosen for its ability to model
+ short-range charged defect interactions [REFs], as well as maintaining
+ overall charge neurality of the MD simulation.
+ The Coulombic potential models charge attraction/repulsion effects between
+ ions, at distances greater than the atomic radii.
+ The potential for the interaction between two ions 
+\emph on
+i
+\emph default
+ and 
+\emph on
+j
+\emph default
+ at a distance 
+\emph on
+r
+\emph default
+ is defined by Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Buckingham-Potential"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+U_{ij}\left(r\right)=A_{ij}e^{\nicefrac{-r}{\rho_{ij}}}-\frac{C_{ij}}{r_{ij}}+\frac{q_{i}q_{j}}{4\pi\epsilon_{0}r_{ij}}\label{eq:Buckingham-Potential}
+\end{equation}
+
+\end_inset
+
+where the parameters 
+\emph on
+A
+\emph default
+, 
+\begin_inset Formula $\rho$
+\end_inset
+
+, and 
+\emph on
+C
+\emph default
+ are taken from the previous studies of Grimes et al and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Grimes1995,Minervini2000"
+
+\end_inset
+
+.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Buckingham-Coulomb-Pairs"
+
+\end_inset
+
+ lists the parameters and references used for the various ions in this study.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ion Pair
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{A_{ij}}$
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left(eV\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{ij}$
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left(\textrm{Å}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{C_{ij}}$
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\left(\frac{eV}{\textrm{Å}^{6}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ref.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{O^{2-}-O^{2-}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9547.96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2192
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Grimes1995"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{O^{2-}-Fe^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{O^{2-}-Cr^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1204.18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3165
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Grimes1995"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{O^{2-}-Ni^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Fe^{3+}-Fe^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Fe^{3+}-Cr^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Fe^{3+}-Ni^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Cr^{3+}-Fe^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Cr^{3+}-Ni^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Ni^{3+}-Ni^{3+}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Buckingham-Coulomb-Pairs"
+
+\end_inset
+
+Parameters used in the mixed Buckingham-Coulomb potential for ion pairs
+ in this study
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ ___ et al had already performed validation of these potentials, by studying
+ ___ [PENGHUI, PLEASE FILL IN JUSTIFICATION FOR POTENTIAL USAGE HERE]
+\end_layout
+
+\begin_layout Standard
+Like 
+\begin_inset Formula $\mathrm{\alpha-Al_{2}O_{3}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{Fe_{2}O_{3}}$
+\end_inset
+
+ , 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+ has the corundum structure.
+ [ADD UNIT CELL DESCRIPTION].
+ Simulations were carried out using a 18×18×18 hexagonal supercell containing
+ 58,320 atoms as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unit-Cell-Schematic"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Unit-Cell-Schematic"
+
+\end_inset
+
+Schematic of unit cell used in the simulations in this study
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ Periodic boundary conditions were used in all three directions.
+ To study vacancy- and interstitial-assisted ion diffusion, ions were randomly
+ inserted or deleted in the system.
+ In these simulations, vacancy and interstital defects were studied at concentra
+tions of 0.0008 at different temperatures, with low-temperature extrapolation
+ performed by adjusting diffusion coefficients 
+\begin_inset Formula $\left(D\right)$
+\end_inset
+
+ for lower numbers of thermally stable vacancies following Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Diffusion-Coefficient-Simple"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+D\left(T\right)=\alpha a^{2}C\left(T\right)\omega=\alpha a^{2}C\left(T\right)f_{Debye}e^{\nicefrac{-E_{m}}{k_{B}T}}\label{eq:Diffusion-Coefficient-Simple}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\omega$
+\end_inset
+
+ is the successful jump frequency of an ion from one site to another, 
+\begin_inset Formula $\mathit{f_{Debye}}$
+\end_inset
+
+ is the jump attempt frequency, 
+\begin_inset Formula $\mathit{E_{m}}$
+\end_inset
+
+ is the defect migration energy, 
+\begin_inset Formula $\mathit{k_{B}}$
+\end_inset
+
+ is Boltzmann's constant, 
+\emph on
+T
+\emph default
+ is the system temperature, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a crystallographic constant relating the jump distance to the lattice
+ parameter, 
+\emph on
+a
+\emph default
+ is the lattice parameter, and 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ is the thermally stable population of a particular defect.
+ 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ can be defined by Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Equilibrium-Defect-Concentration"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+C=e^{\nicefrac{-E_{f}}{k_{B}T}}\label{eq:Equilibrium-Defect-Concentration}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\mathit{E_{f}}$
+\end_inset
+
+ is the defect formation energy.
+ The above diffusivity equation can therefore be written by Equation :
+\begin_inset Formula 
+\begin{equation}
+D\left(T\right)=\alpha a^{2}f_{Debye}e^{\nicefrac{-\left(E_{f}+E_{m}\right)}{k_{B}T}}\label{eq:Diffusion-Coefficient}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Before the diffusion coefficient calculation, the system is relaxted at
+ zero pressure for 100 ps in the NPT (constant number of atoms, pressure
+ and temperature) and another 100 ps run is performed in the NVT ensemble
+ (constant number of atoms, volume and temperature).
+ The Nose-Hoover thermostat is used in time intergration and the time step
+ is set to be 1 fs.
+ The ion diffusion was determinated measureing mean square displacement
+ (MSD) of ions as a function of time at a range of temperatures.
+ The MSD of ion is described by Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:MSD"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\left\langle \Delta r^{2}\left(t\right)\right\rangle =\frac{1}{N}\underset{i=1}{\overset{n}{\sum}}\left[r_{i}\left(t+t_{0}\right)-r_{i}\left(t_{0}\right)\right]^{2}\label{eq:MSD}
+\end{equation}
+
+\end_inset
+
+where N is total number of the ion in the system, r(t 0 ) is initial reference
+ position at time t 0 and r(t) is position at time t + t 0 .
+ The diffusivity that relates MSD to the observe time t is defined in Equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Diffusion-Coefficient-Formula"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+D=\frac{\left\langle r^{2}\left(t\right)\right\rangle }{2d\times t}\label{eq:Diffusion-Coefficient-Formula}
+\end{equation}
+
+\end_inset
+
+where 
+\emph on
+d
+\emph default
+ is dimensionality of the system.
+ Then, the diffusivities of ions along the c-axis, in the ab-plane and in
+ three dimensions can be calculated by Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:c-Diffusion"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3D-Diffusion"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray}
+D_{c} & = & \frac{\left\langle r_{c}^{2}\left(t\right)\right\rangle }{2t}\label{eq:c-Diffusion}\\
+D_{ab} & = & \frac{\left\langle r_{ab}^{2}\left(t\right)\right\rangle }{4t}\label{eq:ab-Diffusion}\\
+D_{3D} & = & \frac{\left\langle r_{abc}^{2}\left(t\right)\right\rangle }{6t}\label{eq:3D-Diffusion}
+\end{eqnarray}
+
+\end_inset
+
+Each diffusion coefficient was calculated by fitting the MSD as a function
+ of time (see Supplementary Material S_ for an example).
+ All diffusion simuations were performed in NVT emsamble by extensive simulation
+ time of 1
+\begin_inset space \thinspace{}
+\end_inset
+
+ns to ensure adequate statistical sampling.
+ Migration energy barriers 
+\begin_inset Formula $\left(E_{m}\right)$
+\end_inset
+
+ for each ion travelling along potential diffusion paths were found by NEB
+ analysis.
+ [PENGHUI, PLEASE EXPLAIN THE NEB PROCESS HERE].
+ An example of how this process was applied to the simulations in this manuscrip
+t is shown in Supplementary Material S_.
+ Finally, calculated diffusion coefficients were extrapolated to lower temperatu
+res, by scaling the values found using Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:c-Diffusion"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3D-Diffusion"
+
+\end_inset
+
+ by the difference in 
+\end_layout
+
+\begin_layout Standard
+All input files, intermediate files, raw output files, scripts, intermediate
+ and final results can be found alongside this article and its supplementary
+ material in our permanent GitHub repository for this paper [REF].
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+Thermodynamics of Defect Formation
+\end_layout
+
+\begin_layout Itemize
+Describe 
+\begin_inset Formula $\mathrm{E_{f}}$
+\end_inset
+
+ for vacancies and interstitials in 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+, so the 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ term in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Equilibrium-Defect-Concentration"
+
+\end_inset
+
+ can be known.
+\end_layout
+
+\begin_layout Subsection
+Temperature-Dependent Ion Diffusivities
+\end_layout
+
+\begin_layout Itemize
+Diffusion coefficients determined at vacancy defect interstital defect are
+ shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Chromium-ion-diffusivities"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oxygen-ion-diffusivities"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Cr.eps
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Figures/Diffusion_ratio_Cr.eps
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Chromium-ion-diffusivities"
+
+\end_inset
+
+Chromium ion diffusivities in 3 dimensions, along c axis and in ab plane.
+ (left)Oxygen vacancy and intersti- tial diffusion coefficients as function
+ of temperature, (right) (a)normalized chromium vacancy diffusivities D
+ ab and D c in ab plan and along c axis, (b)normalized chromium interstital
+ diffusivities in ab plan and along c axis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Oxygen.eps
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Figures/Diffusion_ratio_Oxygen.eps
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Oxygen-ion-diffusivities"
+
+\end_inset
+
+Oxygen ion diffusivities in 3 dimensions, along c axis and in ab plane.
+ (left)oxygen vacancy and interstitial diffusion coefficients as function
+ of temperature, (right) (a)normalized oxygen vacancy diffusivities D ab
+ and D c in ab plan and along c axis, (b)normalized oxygen interstital diffusivi
+ties in ab plan and along c axis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Also show Ni and Fe effects on oxygen diffusion here
+\end_layout
+
+\begin_layout Subsection
+Ion Migration Pathways
+\end_layout
+
+\begin_layout Itemize
+Oxygen vacancy migration pathways, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oxygen-vacancy-migration"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Oxygen_vacancy_path.pdf
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Oxygen-vacancy-migration"
+
+\end_inset
+
+Oxygen vacancy migration pathways.
+ (a) paths in ab plane, (b) out of plane paths
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chromium vacancy migration pathways, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cr-vacancy-migration"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Cr_vacancy_path.pdf
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cr-vacancy-migration"
+
+\end_inset
+
+Chromium vacancy migration pathways.
+ (a) paths in ab plane, (b) out of plane paths
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chromium interstitial migration pathway, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cr-interstitial-migration"
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/Cr_inter_path.pdf
+	lyxscale 50
+	width 95col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cr-interstitial-migration"
+
+\end_inset
+
+Chromium interstitial migration pathway
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Add a table of migration pathways
+\end_layout
+
+\begin_layout Itemize
+Mention video files of oxygen and chromium migration in the Supplementary
+ Material
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Enumerate
+First, discuss the magnitudes & values of our calculated diffusion coefficients
+ compared to literature (Lobnig, Sabioni) and simulations (Vaari).
+ Explicitly say why they agree or don't.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+VERY CLEARLY explain why Vaari's total 3D diffusion coefficients differ
+ so much from ours in magnitude.
+ Did he use a different potential? Different parameters? Why is it so different?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Explicitly state which direction (in-plane or out-of-plane) is slower, and
+ by how much.
+ This is the direction that we want to induce for slower corrosion rates.
+ Compare this difference in diffusivity with the corrosion rate differences
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shahryari2009,RaviKumar2005"
+
+\end_inset
+
+ for the most direct comparison.
+\end_layout
+
+\begin_layout Enumerate
+Mention how some studies show grain boundary diffusion to be 1,000x times
+ faster than the effective diffusivity 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sabioni2005"
+
+\end_inset
+
+, though controversy still exists whether it's bulk or GB dominated transport
+ [WE SHOULD FIND MORE LITERATURE DISCUSSING THIS]
+\end_layout
+
+\begin_layout Enumerate
+Talk about what should be done to confirm whether this effect is real, and
+ 
+\emph on
+utilizable.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Need explicit measurements of 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ texture via EBSD as a function of processing (cast, annealed, rolled, forged,
+ SPD)
+\end_layout
+
+\begin_layout Enumerate
+Need explicit measurements of tracer diffusion rates in differently oriented
+ single crystals of 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+ to confirm our measurements
+\end_layout
+
+\begin_layout Enumerate
+Need to try actual corrosion experiments on as-manufactured materials by
+ different processes to confirm
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+(will write last)
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+P.
+ C.
+ and M.
+ P.
+ S.
+ gratefully acknowledge support from the Electric Power Research Institute's
+ (EPRI's) Pressurized Water Reactors Technical Advisory Committee (P-TAC),
+ under contract number ___.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "2016Cr2O3"
+options "unsrt"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
