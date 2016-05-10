@@ -74,7 +74,8 @@ Molecular Dynamics Study of Anisotropic Lattice Diffusion in
 
 \begin_layout Author
 P.
- Cao, D.
+ Cao, C.
+ Dennett, D.
  M.
  Wells, M.
  P.
@@ -276,21 +277,6 @@ key "Chroneos2011"
 \end_layout
 
 \begin_layout Standard
-Dopants can also change oxygen penetration through oxides, either by substition
- or by ordering.
- Parfitt et al showed that cation disorder changes oxygen anion diffusion
- anisotropy 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Parfitt2011"
-
-\end_inset
-
-, showing how cation ordering can affect anion transport through oxides.
- [MORE TO COME ON DOPING SOON]
-\end_layout
-
-\begin_layout Standard
 Transport of cations and anions specifically through 
 \begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
 \end_inset
@@ -455,7 +441,7 @@ key "Finger1980"
 
 \begin_layout Standard
 In this manuscript, we present detailed, mechanism-based molecular dynamics
- simulations of oxygen and cation (Fe, Ni, Cr) diffusion through 
+ simulations of oxygen and Cr cation diffusion through 
 \begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
 \end_inset
 
@@ -470,11 +456,21 @@ In this manuscript, we present detailed, mechanism-based molecular dynamics
 \begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
 \end_inset
 
- at ___ orientations.
+ grown with the c-axis perpendicular to the materials surface.
+ Preliminary experiments confirm the ability to grow preferentially-textured
+ 
+\begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
+\end_inset
+
+ with certain types of processing.
 \end_layout
 
 \begin_layout Section
 Methods
+\end_layout
+
+\begin_layout Subsection
+Simulation Methods
 \end_layout
 
 \begin_layout Standard
@@ -562,7 +558,8 @@ A
 \emph on
 C
 \emph default
- are taken from the previous studies of Grimes et al and 
+ are taken from the previous studies of Grimes et al and Minervini et al
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Grimes1995,Minervini2000"
@@ -587,9 +584,8 @@ status collapsed
 \noindent
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="5">
+<lyxtabular version="3" rows="3" columns="4">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -644,7 +640,7 @@ Ion Pair
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -660,15 +656,6 @@ Ion Pair
 \end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Ref.
 \end_layout
 
 \end_inset
@@ -705,7 +692,7 @@ Ref.
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -714,74 +701,9 @@ Ref.
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Grimes1995"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{O^{2-}-Fe^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -793,7 +715,7 @@ key "Grimes1995"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -802,7 +724,7 @@ key "Grimes1995"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -811,376 +733,11 @@ key "Grimes1995"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Grimes1995"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{O^{2-}-Ni^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{Fe^{3+}-Fe^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{Fe^{3+}-Cr^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{Fe^{3+}-Ni^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{Cr^{3+}-Fe^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{Cr^{3+}-Ni^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{Ni^{3+}-Ni^{3+}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.0
 \end_layout
 
 \end_inset
@@ -1204,7 +761,14 @@ name "tab:Buckingham-Coulomb-Pairs"
 \end_inset
 
 Parameters used in the mixed Buckingham-Coulomb potential for ion pairs
- in this study
+ in this study, taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Grimes1995"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1212,14 +776,17 @@ Parameters used in the mixed Buckingham-Coulomb potential for ion pairs
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
+ Grimes et al had already performed validation of this potential using these
+ parameters 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Grimes1995"
 
 \end_inset
 
- ___ et al had already performed validation of these potentials, by studying
- ___ [PENGHUI, PLEASE FILL IN JUSTIFICATION FOR POTENTIAL USAGE HERE]
+, by tuning the parameters until lattice constants were accurately reproduced.
 \end_layout
 
 \begin_layout Standard
@@ -1235,8 +802,9 @@ Like
 \begin_inset Formula $\mathrm{\alpha-Cr_{2}O_{3}}$
 \end_inset
 
- has the corundum structure.
- [ADD UNIT CELL DESCRIPTION].
+ has the corundum structure, with hexagonally close packed oxygen anions.
+ The cations in this lattice occupy two thirds of the available octahedral
+ sites, and interstitial sites exist between alternative pairs of cations.
  Simulations were carried out using a 18×18×18 hexagonal supercell containing
  58,320 atoms as shown in Figure 
 \begin_inset CommandInset ref
@@ -1252,10 +820,7 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
+[WAITING FOR UNIT CELL]
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -1281,106 +846,50 @@ Schematic of unit cell used in the simulations in this study
 
  Periodic boundary conditions were used in all three directions.
  To study vacancy- and interstitial-assisted ion diffusion, ions were randomly
- inserted or deleted in the system.
+ deleted from or inserted into the system.
  In these simulations, vacancy and interstital defects were studied at concentra
-tions of 0.0008 at different temperatures, with low-temperature extrapolation
- performed by adjusting diffusion coefficients 
+tions of 0.0008 atom fraction at different temperatures, with low-temperature
+ extrapolation performed by adjusting diffusion coefficients 
 \begin_inset Formula $\left(D\right)$
 \end_inset
 
- for lower numbers of thermally stable vacancies following Equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Diffusion-Coefficient-Simple"
-
-\end_inset
-
-:
-\begin_inset Formula 
-\begin{equation}
-D\left(T\right)=\alpha a^{2}C\left(T\right)\omega=\alpha a^{2}C\left(T\right)f_{Debye}e^{\nicefrac{-E_{m}}{k_{B}T}}\label{eq:Diffusion-Coefficient-Simple}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\omega$
-\end_inset
-
- is the successful jump frequency of an ion from one site to another, 
-\begin_inset Formula $\mathit{f_{Debye}}$
-\end_inset
-
- is the jump attempt frequency, 
-\begin_inset Formula $\mathit{E_{m}}$
-\end_inset
-
- is the defect migration energy, 
-\begin_inset Formula $\mathit{k_{B}}$
-\end_inset
-
- is Boltzmann's constant, 
-\emph on
-T
-\emph default
- is the system temperature, 
-\begin_inset Formula $\alpha$
-\end_inset
-
- is a crystallographic constant relating the jump distance to the lattice
- parameter, 
-\emph on
-a
-\emph default
- is the lattice parameter, and 
-\begin_inset Formula $C\left(T\right)$
-\end_inset
-
- is the thermally stable population of a particular defect.
- 
-\begin_inset Formula $C\left(T\right)$
-\end_inset
-
- can be defined by Equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Equilibrium-Defect-Concentration"
-
-\end_inset
-
-:
-\begin_inset Formula 
-\begin{equation}
-C=e^{\nicefrac{-E_{f}}{k_{B}T}}\label{eq:Equilibrium-Defect-Concentration}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $\mathit{E_{f}}$
-\end_inset
-
- is the defect formation energy.
- The above diffusivity equation can therefore be written by Equation :
-\begin_inset Formula 
-\begin{equation}
-D\left(T\right)=\alpha a^{2}f_{Debye}e^{\nicefrac{-\left(E_{f}+E_{m}\right)}{k_{B}T}}\label{eq:Diffusion-Coefficient}
-\end{equation}
-
-\end_inset
-
-
+ for lower numbers of thermally stable vacancies.
+ It should be noted that because we are focusing on anisotropy, and not
+ absolute diffusion coefficients, performing the low-temeperature extrapolation
+ is not necessary for this study.
 \end_layout
 
 \begin_layout Standard
 Before the diffusion coefficient calculation, the system is relaxted at
- zero pressure for 100 ps in the NPT (constant number of atoms, pressure
- and temperature) and another 100 ps run is performed in the NVT ensemble
- (constant number of atoms, volume and temperature).
+ zero pressure for 0.1
+\begin_inset space \thinspace{}
+\end_inset
+
+ns in the NPT (constant number of atoms, pressure and temperature) ensemble,
+ and another 0.1
+\begin_inset space \thinspace{}
+\end_inset
+
+ns run is performed in the NVT ensemble (constant number of atoms, volume
+ and temperature).
+ In all simulations, the PPPM method {hockney1988computer } is used to compute
+ long-range Coulombic interaction component of Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Buckingham-Potential"
+
+\end_inset
+
+, and the short-range part of the potential is calculated with a cutoff
+ distance of 10
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\textrm{Å}$
+\end_inset
+
+.
  The Nose-Hoover thermostat is used in time intergration and the time step
  is set to be 1 fs.
  The ion diffusion was determinated measureing mean square displacement
@@ -1448,6 +957,32 @@ D_{3D} & = & \frac{\left\langle r_{abc}^{2}\left(t\right)\right\rangle }{6t}\lab
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+All diffusion simulations were performed in the NVT ensemble, using a long
+ simulation time of 1
+\begin_inset space \thinspace{}
+\end_inset
+
+ns to ensure adequate statistical sampling.
+ Migration energy barriers 
+\begin_inset Formula $\left(E_{m}\right)$
+\end_inset
+
+ for each ion travelling along potential diffusion paths were calculated
+ by the Nudged Elastic Band (NEB) method 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Henkelman2000"
+
+\end_inset
+
+, using 20 replicas of the system per calculation.
+\end_layout
+
+\begin_layout Standard
 Each diffusion coefficient was calculated by fitting the MSD as a function
  of time (see Supplementary Material S_ for an example).
  All diffusion simuations were performed in NVT emsamble by extensive simulation
@@ -1462,25 +997,64 @@ ns to ensure adequate statistical sampling.
 
  for each ion travelling along potential diffusion paths were found by NEB
  analysis.
- [PENGHUI, PLEASE EXPLAIN THE NEB PROCESS HERE].
- An example of how this process was applied to the simulations in this manuscrip
-t is shown in Supplementary Material S_.
- Finally, calculated diffusion coefficients were extrapolated to lower temperatu
-res, by scaling the values found using Equations 
+ Here, the reaction coordinate, defined as a number between zero and one,
+ sets the linear distance along the path of migration.
+ The atom is moved to the next fractional reaction coordinate along this
+ line, fixed in its position, and allowed to relax in the plane normal to
+ the line to measure its excess potential energy.
+ This activation energy, calculated from NEB, is used to verify the diffusion
+ coefficient (with our elevated defect concentrations) via Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:c-Diffusion"
+reference "eq:Diffusivity-Eq-Temperature"
 
 \end_inset
 
--
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3D-Diffusion"
+:
+\begin_inset Formula 
+\begin{equation}
+D\left(T\right)=\alpha a^{2}C\left(T\right)f_{Debye}e^{-\left(E_{m}\right)/k_{B}T}\label{eq:Diffusivity-Eq-Temperature}
+\end{equation}
 
 \end_inset
 
- by the difference in 
+where 
+\begin_inset Formula $D\left(T\right)$
+\end_inset
+
+ is the temperature-dependent diffusion coefficient, 
+\emph on
+T
+\emph default
+ is the temperature in Kelvin, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a factor relating diffusional jump distance to lattice parameter, 
+\emph on
+a
+\emph default
+ is the lattice parameter, 
+\begin_inset Formula $C\left(T\right)$
+\end_inset
+
+ is the imposed defect concentration in atom fraction, 
+\begin_inset Formula $\mathrm{f_{Debye}}$
+\end_inset
+
+ is the Debye frequency for diffusion attempts, 
+\begin_inset Formula $\mathit{E_{m}}$
+\end_inset
+
+ is the migration energy of the defect, and 
+\begin_inset Formula $\mathit{k_{B}}$
+\end_inset
+
+ is Boltzmann's constant.
+\end_layout
+
+\begin_layout Subsection
+Experimental Methods
 \end_layout
 
 \begin_layout Standard
@@ -1490,74 +1064,162 @@ All input files, intermediate files, raw output files, scripts, intermediate
 \end_layout
 
 \begin_layout Section
+\noindent
 Results
-\end_layout
-
-\begin_layout Subsection
-Thermodynamics of Defect Formation
-\end_layout
-
-\begin_layout Itemize
-Describe 
-\begin_inset Formula $\mathrm{E_{f}}$
-\end_inset
-
- for vacancies and interstitials in 
-\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
-\end_inset
-
-, so the 
-\begin_inset Formula $C\left(T\right)$
-\end_inset
-
- term in Equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Equilibrium-Defect-Concentration"
-
-\end_inset
-
- can be known.
 \end_layout
 
 \begin_layout Subsection
 Temperature-Dependent Ion Diffusivities
 \end_layout
 
-\begin_layout Itemize
-Diffusion coefficients determined at vacancy defect interstital defect are
- shown in Fig.
+\begin_layout Subsubsection
+Vacancy diffusivities
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/Vacancy-Diffusivity-All.eps
+	lyxscale 300
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Vacancy-diffusivities"
+
+\end_inset
+
+(a) Arrhenius plot of the calculated vacancy diffusivities of chromium and
+ oxygen.
+ (b) Measured chromium and oxygen diffusion anisotropy in ab-plane and along
+ c-axis.
  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The computed 3D vacancy diffusion coefficients of chromium and oxygen ions
+ at temperatures from 1300K to 2000K are shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Chromium-ion-diffusivities"
+reference "fig:Vacancy-diffusivities"
 
+\end_inset
+
+(a).
+ Here, diffusion coefficients were scaled down from those computed with
+ the 0.008 atomc fraction defects using the Arrhenius relation, to account
+ for thermally stable vacancy populations at lower temperatures.
+ We performed four independent simulations for each temperature, and the
+ error bars in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Vacancy-diffusivities"
+
+\end_inset
+
+ represent one standard deviation of the diffusion coefficients.
+ The diffusivity comparison shows that oxygen diffusion coefficients are
+ close to those of chromium at temperatures of 1300K and 1400K.
+ However, oxygen diffusivity becomes greater when the temperature is higher
+ than 1500K.
+\end_layout
+
+\begin_layout Standard
+In order to quantify diffusion anisotropy, we define two relative diffusion
+ ratios 
+\begin_inset Formula $\mathit{C_{ab}}$
 \end_inset
 
  and 
+\begin_inset Formula $\mathit{C_{c}}$
+\end_inset
+
+, calculated as 
+\begin_inset Formula $\mathit{\nicefrac{D_{ab}}{D_{3D}}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{\nicefrac{D_{c}}{D_{3D}}}$
+\end_inset
+
+ respectively, where 
+\begin_inset Formula $\mathit{D_{ab}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{D_{c}}$
+\end_inset
+
+ are diffusion coefficients in the ab-plane and along the c-axis, respectively,
+ and 
+\begin_inset Formula $\mathit{D_{3D}}$
+\end_inset
+
+ is three-dimensional diffusion coefficient shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Oxygen-ion-diffusivities"
+reference "fig:Vacancy-diffusivities"
 
 \end_inset
 
-.
+(a).
+ We present the calculated relative diffusion ratios in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Vacancy-diffusivities"
+
+\end_inset
+
+(b).
+ Both chromium and oxygen show highly anisotropic diffusion at temperatures
+ below 1500K, with chromium diffusion exhibiting more anisotropy than oxygen.
+ At a temperature of 1300K, chromium diffusivity in ab-plane is 1.9 times
+ as large as the c-axis diffusivity.
+ Diffusion anisotropy C trends towards unity as the temperature increases,
+ and as vacancy diffusion becomes directionally independent at temperatures
+ higher than 1700K.
+ We will interpret this later in detail in the diffusion path analysis section.
+\end_layout
+
+\begin_layout Subsubsection
+Interstitial diffusivity
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
-	filename Figures/Cr.eps
-	width 45col%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Figures/Diffusion_ratio_Cr.eps
-	width 45col%
+	filename Figures/Interstitial-Diffusivity-All.eps
+	lyxscale 300
+	width 90col%
 
 \end_inset
 
@@ -1570,66 +1232,15 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Chromium-ion-diffusivities"
+name "fig:Interstitia-diffusivities"
 
 \end_inset
 
-Chromium ion diffusivities in 3 dimensions, along c axis and in ab plane.
- (left)Oxygen vacancy and intersti- tial diffusion coefficients as function
- of temperature, (right) (a)normalized chromium vacancy diffusivities D
- ab and D c in ab plan and along c axis, (b)normalized chromium interstital
- diffusivities in ab plan and along c axis
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/Oxygen.eps
-	width 45col%
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Figures/Diffusion_ratio_Oxygen.eps
-	width 45col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Oxygen-ion-diffusivities"
-
-\end_inset
-
-Oxygen ion diffusivities in 3 dimensions, along c axis and in ab plane.
- (left)oxygen vacancy and interstitial diffusion coefficients as function
- of temperature, (right) (a)normalized oxygen vacancy diffusivities D ab
- and D c in ab plan and along c axis, (b)normalized oxygen interstital diffusivi
-ties in ab plan and along c axis
+(a) Arrhenius plot of the calculated interstitial diffusivities of chromium
+ and oxygen.
+ (b) Measured chromium and oxygen diffusion anisotropy in ab-plane and along
+ c-axis.
+ 
 \end_layout
 
 \end_inset
@@ -1639,27 +1250,54 @@ ties in ab plan and along c axis
 
 \end_inset
 
+The computed chromium and oxygen interstitial diffusion coefficients are
+ shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Interstitia-diffusivities"
 
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Also show Ni and Fe effects on oxygen diffusion here
+(a).
+ We find that oxygen interstitial diffusivity is higher than that of chromium
+ by one order of magnitude.
+ Interstitial diffusion exhibits far higher anisotropy for all simulated
+ temperatures shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Interstitia-diffusivities"
+
+\end_inset
+
+(b).
+ Diffusion along the c-axis is dominant for both chromium and oxygen.
+ Chromium diffusion along the c-axis is about 30 times faster than diffusion
+ in the ab-plane, while oxygen is approximately 1.4 times larger along the
+ c-axis.
+ 
 \end_layout
 
 \begin_layout Subsection
 Ion Migration Pathways
 \end_layout
 
-\begin_layout Itemize
-Oxygen vacancy migration pathways, Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Oxygen-vacancy-migration"
-
+\begin_layout Standard
+In order to interpret anisotropic diffusion in 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
 \end_inset
 
+, we have analyzed all energetically possible ion diffusion paths, and have
+ computed migration energies of four types of point defects, oxygen vacancies,
+ chromium vacancies, chromium interstitials, and oxygen interstitials by
+ using the NEB method.
+ 
+\end_layout
 
+\begin_layout Subsubsection
+Oxygen vacancy migration paths
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1667,7 +1305,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Oxygen_vacancy_path.pdf
+	filename Figures/Oxygen-Vacancy-Paths.png
 	lyxscale 50
 	width 95col%
 
@@ -1683,9 +1321,449 @@ name "fig:Oxygen-vacancy-migration"
 
 \end_inset
 
-Oxygen vacancy migration pathways.
- (a) paths in ab plane, (b) out of plane paths
+Oxygen vacancy migration pathways in 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+.
+ The left panels demonstrate oxygen vacancy diffusion paths: (a) paths in
+ ab-plane, (b) out of plane (c-axis) paths.
+ Corresponding NEB-calculated activation energies are shown on the right
+ panels.
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+A single oxygen atom is removed from a lattice site to model oxygen vacancy
+ defects.
+ We have identified five possible vacancy migration pathways involving the
+ first and second nearest oxygen neighbors, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oxygen-vacancy-migration"
+
+\end_inset
+
+.
+ In 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
+\end_inset
+
+, oxygen ions are hexagonally close packed, and there are six equivalent
+ nearest neighbors on the ab-plane.
+ Due to this structural symmetry, only two pathways, 
+\begin_inset Formula $\mathit{O_{V}-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{O_{V}-2}$
+\end_inset
+
+, are considered to be distinct.
+ Paths 
+\begin_inset Formula $\mathit{O_{V}-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{O_{V}-2}$
+\end_inset
+
+ depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oxygen-vacancy-migration"
+
+\end_inset
+
+(a) are confined to the ab-plane.
+ 
+\begin_inset Formula $\mathit{O_{V}-2}$
+\end_inset
+
+ occurs between two oxygen sites sharing the same octahedron, whereas 
+\begin_inset Formula $\mathit{O_{V}-1}$
+\end_inset
+
+ involves an oxygen site on a neighboring octahedral vertex.
+ The other three possible diffusion paths involving out-of-plane diffusion
+ along the c-axis, 
+\begin_inset Formula $\mathit{O_{V}-3}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathit{O_{V}-4}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathit{O_{V}-5}$
+\end_inset
+
+, are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oxygen-vacancy-migration"
+
+\end_inset
+
+(b).
+ The out-of-plane diffusion paths occur either by moving along an octahedral
+ edge (
+\begin_inset Formula $\mathit{O_{V}-3}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathit{O_{V}-4}$
+\end_inset
+
+) or by passing through a chromium interstitial site (
+\begin_inset Formula $\mathit{O_{V}-5}$
+\end_inset
+
+).
+ The difference between 
+\begin_inset Formula $\mathit{O_{V}-3}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{O_{V}-4}$
+\end_inset
+
+ is that the path edge of 
+\begin_inset Formula $\mathit{O_{V}-3}$
+\end_inset
+
+ is shared by two octahedra.
+ The minimum activation energy for each individual diffusion path was calculated
+ by the NEB method, and is shown on the right panel of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oxygen-vacancy-migration"
+
+\end_inset
+
+.
+ It should be noted that 
+\begin_inset Formula $\mathit{O_{V}-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{O_{V}-2}$
+\end_inset
+
+ only move oxygen in ab-plane, which is the mechanism for such highly anisotropi
+c oxygen anion diffusion.
+ Previous experimental studies using radioactive tracers have confirmed
+ that oxygen preferentially transports via the vacancy mechanism 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hoshino1983"
+
+\end_inset
+
+.
+ The values of oxygen vacancy migration energies 
+\begin_inset Formula $\mathit{E_{m}}$
+\end_inset
+
+, in-plane jump distances 
+\begin_inset Formula $\mathit{d_{ab}}$
+\end_inset
+
+, and axial jump distances 
+\begin_inset Formula $\mathit{d_{c}}$
+\end_inset
+
+ are reported in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Oxygen-Vacancy-Migration"
+
+\end_inset
+
+.
+ The lowest migration energy of path Ov-1 results in higher ab-plane diffusivity
+ at low temperature, which agrees well with the anisotropic diffusion which
+ we calculated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oxygen-vacancy-migration"
+
+\end_inset
+
+(b).
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Path
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{E_{m}\,\left(eV\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{d_{ab}\,\left(\textrm{Å}\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{d_{c}\,\left(\textrm{Å}\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{O_{V}-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.425
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{O_{V}-2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{O_{V}-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{O_{V}-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{O_{V}-5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -1693,6 +1771,32 @@ Oxygen vacancy migration pathways.
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Oxygen-Vacancy-Migration"
+
+\end_inset
+
+Migration energy 
+\begin_inset Formula $\mathit{E_{m}}$
+\end_inset
+
+, plane jump distance 
+\begin_inset Formula $\mathit{d_{ab}}$
+\end_inset
+
+, and axial jump distance 
+\begin_inset Formula $\mathit{d_{c}}$
+\end_inset
+
+ for oxygen vacancy diffusion mechanisms.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1701,16 +1805,11 @@ Oxygen vacancy migration pathways.
 
 \end_layout
 
-\begin_layout Itemize
-Chromium vacancy migration pathways, Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Cr-vacancy-migration"
+\begin_layout Subsubsection
+Chromium vacancy migration pathways
+\end_layout
 
-\end_inset
-
-
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1718,7 +1817,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figures/Cr_vacancy_path.pdf
+	filename Figures/Chromium-Vacancy-Paths.png
 	lyxscale 50
 	width 95col%
 
@@ -1734,30 +1833,443 @@ name "fig:Cr-vacancy-migration"
 
 \end_inset
 
-Chromium vacancy migration pathways.
- (a) paths in ab plane, (b) out of plane paths
-\end_layout
-
+Chromium vacancy migration pathways in 
+\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Chromium interstitial migration pathway, Fig.
+.
+ The left panels demonstrate chromium vacancy diffusion paths: (a) paths
+ in the ab-plane, (b) out-of-plane paths along the c-axis.
+ Corresponding NEB-calculated minimum energy pathways are shown on the right
+ panels.
  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We also propose five energetically possible migration paths for chromium
+ vacancies by considering neighboring chromium sites.
+ 
+\begin_inset Formula $\mathit{Cr_{V}-1}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathit{Cr_{V}-2}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathit{Cr_{V}-3}$
+\end_inset
+
+ involve diffusion within the chromium bilayer contained within the ab-plane
+ depicted in 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Cr-interstitial-migration"
+reference "fig:Cr-vacancy-migration"
+
+\end_inset
+
+(a), where 
+\begin_inset Formula $\mathit{Cr_{V}-1}$
+\end_inset
+
+ relates to a jump between the nearest neighbor chromium sites, and 
+\begin_inset Formula $\mathit{Cr_{V}-2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{Cr_{V}-3}$
+\end_inset
+
+ involve the second and third nearest neighbors within the chromium cation
+ bilayer.
+ The calculated migration energies show that energetic migration barriers
+ of 
+\begin_inset Formula $\mathit{Cr_{V}-2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{Cr_{V}-3}$
+\end_inset
+
+ are much greater than that of 
+\begin_inset Formula $\mathit{Cr_{V}-1}$
+\end_inset
+
+.
+ The other two paths 
+\begin_inset Formula $\mathit{Cr_{V}-4}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathit{Cr_{V}-5}$
+\end_inset
+
+ transport chromium along the c-axis, but 
+\begin_inset Formula $\mathit{Cr_{V}-4}$
+\end_inset
+
+ relates to migration between two neighboring chromium sites while 
+\begin_inset Formula $\mathit{Cr_{V}-5}$
+\end_inset
+
+ involves movement through a chromium interstitial site.
+ The energy path of 
+\begin_inset Formula $\mathit{Cr_{V}-5}$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cr-vacancy-migration"
+
+\end_inset
+
+(b) shows an intermediate state, which corresponds to the migration into
+ the interstitial site.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Cr-Vacancy-Table"
+
+\end_inset
+
+ reports the calculated migration energies for chromium vacancy and jump
+ distances.
+ The high overall ab-plane vacancy diffusivity of chromium is attributed
+ to the low migration energy of 
+\begin_inset Formula $\mathit{Cr_{V}-1}$
+\end_inset
+
+, involving a high in-plane jump distance 
+\begin_inset Formula $\mathit{d_{ab}}$
+\end_inset
+
+.
+ 
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Path
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{E_{m}\,\left(eV\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{d_{ab}\,\left(\textrm{Å}\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{d_{c}\,\left(\textrm{Å}\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{Cr_{V}-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.971
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.84
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.385
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{Cr_{V}-2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{Cr_{V}-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.73
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.385
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{Cr_{V}-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.65
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathit{Cr_{V}-5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.41
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Cr-Vacancy-Table"
+
+\end_inset
+
+Migration energy 
+\begin_inset Formula $\mathit{E_{m}}$
+\end_inset
+
+, plane jump distance 
+\begin_inset Formula $\mathit{d_{ab}}$
+\end_inset
+
+, and axial jump distance 
+\begin_inset Formula $\mathit{d_{c}}$
+\end_inset
+
+ for chromium vacancy diffusion mechanisms.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Interstitial migration pathways
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1765,9 +2277,17 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
+	filename Figures/Cr-Interstitial-Pathway.png
+	lyxscale 50
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Graphics
 	filename Figures/Cr_inter_path.pdf
 	lyxscale 50
-	width 95col%
+	width 45col%
 
 \end_inset
 
@@ -1781,7 +2301,9 @@ name "fig:Cr-interstitial-migration"
 
 \end_inset
 
-Chromium interstitial migration pathway
+Cascade like chromium interstitial diffusion mechanism (left) and NEB-calculated
+ activation energy barrier (right).
+ A video of this process is available as Supplementary Material S__.
 \end_layout
 
 \end_inset
@@ -1791,16 +2313,48 @@ Chromium interstitial migration pathway
 
 \end_inset
 
+Cation and anion interstitial migrations were studied by inserting chromium
+ and oxygen into unoccupied octahedral holes.
+ The diffusion mechanism of the chromium interstitial was found to be a
+ cascade-like process, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cr-interstitial-migration"
 
+\end_inset
+
+.
+ Three chromium ions along the c-axis are involved in a coordinated manner,
+ two of which are neighboring chromium ions and one is interstitial.
+ The calculated lowest migration energy barrier is estimated to be 1.37
+\begin_inset space \thinspace{}
+\end_inset
+
+eV, which explains the c-axis dominated Cr interstitial diffusion shown
+ in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Interstitia-diffusivities"
+
+\end_inset
+
+(b).
+ Oxygen interstitial diffuses through unoccupied octahedral holes that leads
+ to a higher c-axis jump distance dc than ab-plane jump distance dab.
+\end_layout
+
+\begin_layout Subsection
+Experimental Results
 \end_layout
 
 \begin_layout Itemize
-Add a table of migration pathways
+EBSD scans of oxide on annealed and cold-rolled Fe-20Cr as function of cold
+ work
 \end_layout
 
 \begin_layout Itemize
-Mention video files of oxygen and chromium migration in the Supplementary
- Material
+Oxide thicknesses, compared with simulation results to show whether texture
+ leads to less oxidation (using FIB)
 \end_layout
 
 \begin_layout Section
@@ -1820,7 +2374,25 @@ VERY CLEARLY explain why Vaari's total 3D diffusion coefficients differ
  Did he use a different potential? Different parameters? Why is it so different?
 \end_layout
 
+\begin_layout Enumerate
+Also include JAPCC paper!!! They can't do anisotropy directly, because DFT
+ is (1) very small simulation size (no direct diffusivity calc, only estimate
+ from barriers), and (2) 0K (no real temperature-dependent-D)
+\end_layout
+
 \end_deeper
+\begin_layout Enumerate
+Explicitly mention why we contradict the Cr-51 tracer experiment, which
+ shows faster c-plane diffusion.
+ Answer: They only did >1400C, and our results also show agreement with
+ this (we have a ratio of 1.27, they have a ratio of 1.7, but still same direciton
+).
+ NOBODY has ever done a tracer experiment to measure anisotropy at such
+ low temperatures as <1350C, so nobody has looked! In addition, no simulations
+ have looked for this.
+ MD diffusion has always been 3D, and DFT can't access this directly.
+\end_layout
+
 \begin_layout Enumerate
 Explicitly state which direction (in-plane or out-of-plane) is slower, and
  by how much.
@@ -1837,6 +2409,10 @@ key "Shahryari2009,RaviKumar2005"
 \end_layout
 
 \begin_layout Enumerate
+Compare with experiment
+\end_layout
+
+\begin_layout Enumerate
 Mention how some studies show grain boundary diffusion to be 1,000x times
  faster than the effective diffusivity 
 \begin_inset CommandInset citation
@@ -1849,38 +2425,6 @@ key "Sabioni2005"
  [WE SHOULD FIND MORE LITERATURE DISCUSSING THIS]
 \end_layout
 
-\begin_layout Enumerate
-Talk about what should be done to confirm whether this effect is real, and
- 
-\emph on
-utilizable.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Need explicit measurements of 
-\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
-\end_inset
-
- texture via EBSD as a function of processing (cast, annealed, rolled, forged,
- SPD)
-\end_layout
-
-\begin_layout Enumerate
-Need explicit measurements of tracer diffusion rates in differently oriented
- single crystals of 
-\begin_inset Formula $\mathrm{Cr_{2}O_{3}}$
-\end_inset
-
- to confirm our measurements
-\end_layout
-
-\begin_layout Enumerate
-Need to try actual corrosion experiments on as-manufactured materials by
- different processes to confirm
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Conclusions
 \end_layout
