@@ -1,0 +1,98 @@
+LAMMPS (28 Jun 2014)
+Processor partition = 8
+Reading data file ...
+  orthogonal box = (0 0 0) to (17.1781 19.8356 13.5931)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  479 atoms
+288 atoms in group oxygen
+191 atoms in group chromium
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = -3 (../kspace.cpp:278)
+  G vector (1/distance) = 0.315056
+  grid = 18 18 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.00121169
+  estimated relative force accuracy = 8.41472e-05
+  using double precision FFTs
+  3d grid and FFT values/proc = 13750 4860
+Setting up minimization ...
+Memory usage per processor = 4.77571 Mbytes
+Step PotEng Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Temp 
+       0   -14738.777   -133026.93   -135830.42   -20852.741    351.92602    8735.6121    459.44568      17.1781      19.8356     13.59308            0 
+     100   -14820.107   -81551.676   -81965.288    -173474.4     809.6595    2571.3188    1406.2059      17.1781      19.8356     13.59308   0.20126592 
+     200   -14820.121   -81539.723   -81909.025    -173234.8    806.22216    2506.3566    1604.9367      17.1781      19.8356     13.59308 9.6344241e-05 
+     300   -14820.113   -81524.578    -81918.68   -173211.15    810.05188    2514.4452    1613.4667      17.1781      19.8356     13.59308 0.00034607774 
+     400   -14820.113   -81526.704   -81919.995   -173210.21    809.23692     2512.413    1613.0879      17.1781      19.8356     13.59308 3.1107519e-06 
+     500   -14820.114   -81529.501   -81919.601   -173211.08    808.36813    2510.7871    1611.9305      17.1781      19.8356     13.59308 2.6839683e-06 
+     600   -14820.115   -81531.304   -81919.421   -173212.35    808.12717    2509.8346    1611.2866      17.1781      19.8356     13.59308 2.817448e-07 
+     680   -14820.115   -81531.836   -81919.169   -173212.57    808.04549    2509.4539    1610.9656      17.1781      19.8356     13.59308 2.2015046e-08 
+Loop time of 30.8201 on 1 procs for 680 steps with 479 atoms
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -14738.7774194     -14820.1150246     -14820.1150201
+  Force two-norm initial, final = 89.068 0.00053601
+  Force max component initial, final = 19.0343 0.000165697
+  Final line search alpha, max atom move = 0 0
+  Iterations, force evaluations = 680 680
+
+Pair  time (%) = 13.8835 (45.0469)
+Kspce time (%) = 1.44979 (4.70403)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0.0563085 (0.182701)
+Outpt time (%) = 0.000202417 (0.000656772)
+Other time (%) = 15.4303 (50.0657)
+
+Nlocal:    479 ave 479 max 479 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    6479 ave 6479 max 6479 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    179006 ave 179006 max 179006 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 179006
+Ave neighs/atom = 373.708
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Setting up minimization ...
+Memory usage per processor = 4.77571 Mbytes
+Step PotEng Pxx Pyy Pzz Pxy Pxz Pyz Lx Ly Lz Temp 
+     680   -14820.115   -81531.836   -81919.169   -173212.57    808.04549    2509.4539    1610.9656      17.1781      19.8356     13.59308            0 
+     700   -14820.132   -81563.048   -81903.689   -173236.84    793.86972    2483.5673    1609.8189      17.1781      19.8356     13.59308 4.449061e-05 
+     800   -14820.162   -81624.618   -81887.699   -173314.87    771.35643    2429.4493    1597.4642      17.1781      19.8356     13.59308 2.4767176e-05 
+     900   -14820.166   -81632.675   -81884.872   -173324.82    768.03021    2422.1865    1595.8436      17.1781      19.8356     13.59308 1.3241185e-06 
+    1000   -14820.168   -81635.677   -81884.225   -173328.29    766.66868    2419.4076    1594.8896      17.1781      19.8356     13.59308 6.8070145e-08 
+    1071   -14820.169    -81637.18   -81883.712   -173330.04    766.04295    2418.0734    1594.5751      17.1781      19.8356     13.59308 2.3023149e-09 
+Loop time of 15.529 on 1 procs for 391 steps with 479 atoms
+
+Minimization stats:
+  Stopping criterion = force tolerance
+  Energy initial, next-to-last, final = 
+        -14820.1150201     -14820.1686178     -14820.1686221
+  Force two-norm initial, final = 0.00053601 0.000456767
+  Force max component initial, final = 0.000165697 0.000296806
+  Final line search alpha, max atom move = 0 0
+  Iterations, force evaluations = 391 391
+
+Pair  time (%) = 7.98928 (51.4475)
+Kspce time (%) = 0.837625 (5.39394)
+Neigh time (%) = 0 (0)
+Comm  time (%) = 0.0332849 (0.21434)
+Outpt time (%) = 0.00012517 (0.000806039)
+Other time (%) = 6.66867 (42.9434)
+
+Nlocal:    479 ave 479 max 479 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:    6479 ave 6479 max 6479 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:    180594 ave 180594 max 180594 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 180594
+Ave neighs/atom = 377.023
+Neighbor list builds = 0
+Dangerous builds = 0

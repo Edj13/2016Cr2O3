@@ -1,0 +1,2 @@
+
+ mpirun -np 11 -H n006 -npernode 11 /home/pcao/Install_Lammps/lammps-28Jun14/src/lmp_linux -partition 11x1 -in in.CrO
