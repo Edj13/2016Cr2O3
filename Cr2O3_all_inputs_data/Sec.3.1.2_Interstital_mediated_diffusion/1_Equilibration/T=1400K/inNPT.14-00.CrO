@@ -1,0 +1,52 @@
+# ------------------ INITIALIZATION -------------------
+units		metal           #check!!!!!
+boundary	p p p
+dimension	3
+atom_style    charge
+shell		mkdir  xyz
+shell         mkdir  dump
+log          log.1400
+
+variable      mytemp equal  1400
+# ------------------- Configuration ---------------------
+read_data	CrO.dat
+
+mass		1  15.9994 
+mass            2  51.9961
+        
+# -------------------- FORCE FIELDS ----------------------
+pair_style buck/coul/long 10.0 10.0
+pair_coeff    * * 1e-30 1e-30 0.0
+pair_coeff    1 2 1204.18 0.3165   0.0
+pair_coeff    1 1 9547.96 0.21916  32.0
+
+kspace_style    pppm 0.0001
+
+
+
+##-------------------- energy minimization ---------------
+
+#compute   aE   all pe/atom
+#min_style  fire
+
+thermo          100
+thermo_style    custom step pe pxx pyy pzz pxy pxz pyz lx ly lz temp
+
+minimize      1e-8 1e-8 1000 1000        
+
+## --------------------- system relax --------------------
+#dump          1 all xyz 100 xyz/all.xyz  
+#dump_modify   1 element O Cr
+
+velocity      all create ${mytemp} 4928459 dist gaussian
+fix           1 all npt temp ${mytemp} ${mytemp} 0.1 iso 0.0 0.0 2 
+run      50000
+
+unfix   1 
+fix          2 all nvt temp ${mytemp} ${mytemp} 0.01
+run      50000
+unfix   2
+
+
+write_data NPT_relaxed_1400.data 
+
