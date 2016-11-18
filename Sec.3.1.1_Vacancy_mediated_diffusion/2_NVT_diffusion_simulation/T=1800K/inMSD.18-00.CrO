@@ -1,0 +1,58 @@
+# ------------------ INITIALIZATION -------------------
+units		metal           #check!!!!!
+boundary	p p p
+dimension	3
+atom_style    charge
+#shell		mkdir  xyz
+#shell         mkdir  dump
+
+log           log.1800
+
+
+variable      mytemp equal  1800
+    
+# -------------------- FORCE FIELDS ----------------------
+pair_style buck/coul/long 10.0 10.0
+
+read_data	NPT_relaxed_1800.data 
+
+pair_coeff    * * 1e-30 1e-30 0.0
+pair_coeff    1 2 1204.18 0.3165   0.0
+pair_coeff    1 1 9547.96 0.21916  32.0
+
+kspace_style    pppm 0.0001
+
+## Define group
+group oxygen type 1
+group chromium type 2 
+ 
+
+## --------------------- NVT  --------------------
+compute allmsd all displace/atom
+
+#dump          2 all custom 25000  dump/dump id type xu yu zu c_allmsd[1] c_allmsd[2] c_allmsd[3] c_allmsd[4]
+#dump          1 all xyz 25000 xyz/all.xyz  
+#dump_modify   1 element O Cr 
+
+
+
+compute   Omsd oxygen msd com yes
+compute   Crmsd chromium msd com yes
+variable  OMSDX equal "c_Omsd[1]"
+variable  OMSDY equal "c_Omsd[2]"
+variable  OMSDZ equal "c_Omsd[3]"
+variable  OMSDAll equal "c_Omsd[4]"
+
+variable  CrMSDX equal "c_Crmsd[1]"
+variable  CrMSDY equal "c_Crmsd[2]"
+variable  CrMSDZ equal "c_Crmsd[3]"
+variable  CrMSDAll equal "c_Crmsd[4]"
+
+thermo          1000
+thermo_style    custom step pe ke press lx ly lz temp c_Omsd[1]  c_Omsd[2]  c_Omsd[3]  c_Omsd[4]  c_Crmsd[1]  c_Crmsd[2]  c_Crmsd[3]  c_Crmsd[4] 
+
+
+fix          1 all print 100 "${OMSDX}   ${OMSDY}   ${OMSDZ}  ${OMSDAll}  ${CrMSDX}   ${CrMSDY}   ${CrMSDZ}  ${CrMSDAll}" file MSD1800.data screen no
+fix          3 all nvt temp ${mytemp} ${mytemp} 0.01
+
+run      1000000
